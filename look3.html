@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Look</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #fff;
+            color: black;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            border-bottom: 1px solid #000;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        header .logo img:hover {
+            opacity: 40%;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 50px;
+        }
+
+        header nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            opacity: 40%;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: space-between;
+            margin: 80px 20px 80px 20px;
+        }
+
+        section {
+            margin-right: 20px;
+            /* Adjusted to reduce gap */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            padding: 10px;
+            /* Adjusted to reduce padding */
+        }
+
+        .large-image {
+            margin-bottom: 10px;
+            /* Adjusted to reduce margin */
+        }
+
+        .large-image img {
+            max-width: 100%;
+            width: 25vw;
+            height: auto;
+            display: block;
+        }
+
+        .text-block {
+            /* border: 1px solid #000; */
+            padding: 20px;
+            margin-top: 10px;
+            width: 500px;
+            /* Adjusted to reduce margin */
+        }
+
+        .sidebar {
+            /* display: flex;
+            flex-direction: column; */
+            padding: 10px;
+            /* Adjusted to reduce padding */
+            margin-left: 10px;
+            /* Adjusted to reduce gap */
+        }
+
+        .image-block {
+            flex: 1;
+            /* border: 1px solid #000; */
+            margin-bottom: 10px;
+            /* Adjusted to reduce margin */
+        }
+
+        .image-block img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: end;
+            padding: 10px 0;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            padding-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            header nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            main h1 {
+                font-size: 36px;
+                margin: 10px 0;
+            }
+
+            main ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="look1.html">Look1</a></li>
+                <li><a href="look2.html">Look2</a></li>
+                <li><a href="look3.html">Look3</a></li>
+                <li><a href="look4.html">Look4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="large-image"><img src="img/look3_1.jpg" style="width: 25vw;"></div>
+        </section>
+        <aside class="sidebar">
+            <div class="image-block"><img src="img/look3_2.jpg" style="width: 15vw;"></div>
+            <div class="image-block"><img src="img/look3_3.jpg" style="width: 15vw;"></div>
+        </aside>
+        <aside>
+            <div class="text-block">
+                칼하트 블랙 후디와 넉넉한 핏의 블랙 워크 팬츠는 편안하면서도 실용적인 스타일을 제공한다.
+                나이키 된장포스를 매치해 캐주얼한 무드를 더하고, 줄이어폰에 키링을 이어 목걸이 처럼 착용 하여
+                개성을 더했다. 이 룩은 편안하면서도 스트릿한 룩이다.</div>
+            <div class="text-block">
+                Calhart Black Hoodie and loose-fit black walk pants provide a comfortable yet practical style.
+                Match it with Nike doenjang force to add a casual mood, and wear it like a necklace with a key ring on the earphone
+                It adds personality. It's a comfortable and street look.
+            </div>
+            
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;2024 YeonWoo Kim All Rights Reserved. <br>
+        고급웹퍼블리싱 직무수행능력평가2 D 22361024 김연우 | dusdnduswo@naver.com</p>
+    </footer>
+</body>
+
+</html>

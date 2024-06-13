@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Look</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #fff;
+            color: black;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            border-bottom: 1px solid #000;
+        }
+        header .logo img {
+            height: 50px;
+        }
+        header .logo img:hover {
+            opacity: 40%;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin-left: 50px;
+        }
+        header nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        header nav ul li a:hover {
+            opacity: 40%;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        main ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        main ul li {
+            margin: 20px;
+            flex: 0 0 auto;
+        }
+        main ul li img {
+            width: 100%;
+            height: 25vw;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        main ul li img:hover {
+            filter: grayscale(0%);
+        }
+        main h1 {
+            font-weight: normal;
+            font-size: 60px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: end;
+            padding: 10px 0;
+            font-size: 12px;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+            padding-right: 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header nav ul {
+                flex-direction: column;
+                width: 100%;
+                padding-top: 10px;
+            }
+            header nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            main {
+                flex-direction: column;
+            }
+            main h1 {
+                font-size: 36px;
+                margin: 10px 0;
+            }
+            main ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            main ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="look1.html">Look1</a></li>
+                <li><a href="look2.html">Look2</a></li>
+                <li><a href="look2.html">Look3</a></li>
+                <li><a href="look2.html">Look4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul>
+            <li><h1>My</h1></li>
+            <li><a href="look1.html"><img src="img/m1-hover.png" alt="Image 1"></a></li>
+            <li><a href="look2.html"><img src="img/m2-hover.png" alt="Image 2"></a></li>
+            <li><h1>Favorite</h1></li>
+            <li><a href="look3.html"><img src="img/m3-hover.png" alt="Image 3"></a></li>
+            <li><a href="look4.html"><img src="img/m4-hover.png" alt="Image 4"></a></li>
+            <li><h1>Look</h1></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy;2024 YeonWoo Kim All Rights Reserved. <br>
+        고급웹퍼블리싱 직무수행능력평가2 D 22361024 김연우 | dusdnduswo@naver.com</p>
+    </footer>
+</body>
+</html>
